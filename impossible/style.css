@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/glotona-black');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+        background-image: url('https://cdn1.epicgames.com/ue/product/Screenshot/g10-1920x1080-d26c5122d8803d571cd4c752aae3a07f.jpg');
+        background-size: cover;
+    }
+    
+    #logo{
+        font-family:  sans-serif;
+        color: gold;
+        font-size:50px;	
+        text-shadow: 0 0 10px white;
+        font-family: 'Glotona Black', sans-serif;
+                                  
+}
+
+header{
+    height: 10vh;
+    text-align: center;
+    background-color: transparent;
+}
+
+main{
+    height: 85vh;
+    position: relative;
+    z-index: 1;
+}
+
+#coin{
+    width:70px;
+    height: 70px;
+    /* background-color:white; */
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d6/Gold_coin_icon.png');
+    background-size: cover;
+    border-radius:50%;
+    box-shadow: 0 0 14px gold;
+}
+
+footer{
+    height:5vh;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

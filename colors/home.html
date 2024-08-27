@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+        <div class="left">
+                <label>Red</label>
+                <div class="flex">
+                    <span>0</span>
+                    <input oninput="color()" type="range" min="0" max="255" id="red">
+                    <span>255</span>
+                </div>
+                <label>Green</label>
+                <div class="flex">
+                    <span>0</span>
+                    <input  oninput="color()" type="range" min="0" max="255" id="green">
+                    <span>255</span>
+                </div>
+                <label>Blue</label>
+                <div class="flex">
+                    <span>0</span>
+                    <input  oninput="color()" type="range" min="0" max="255" id="blue">
+                    <span>255</span>
+                </div>
+
+                <p id="pMark"></p>
+                <mark id="mark"></mark>
+        </div>
+
+        <div id="right"></div>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

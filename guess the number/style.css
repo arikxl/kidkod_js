@@ -1,0 +1,60 @@
+body{
+    color: black;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+.game{
+    width: 400px;
+    margin: 40px auto;
+    background-color: snow;
+    padding:20px;
+    box-shadow: -24px -24px #202020;
+    text-align: center;
+    border-radius:20px;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+h1{
+    color:snow;
+}
+
+.guessDiv{
+}
+
+#guessInput, .go-btn{
+    /* height: 50px; */
+    border: solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.go-btn{
+    width: 30%;
+    float: right;
+    cursor: pointer;
+    background-color: rgb(14,174,87);
+}
+
+#guessInput{
+    width:60%;
+    padding-left: 10px;
+}
+
+
+
+#result{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-radius:10px;
+    display: none;
+}
+
+

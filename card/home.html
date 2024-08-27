@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/rosemary" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/stopmotion" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/fredoka" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/amatic-sc-2" rel="stylesheet">                        
+    <link href="https://fonts.cdnfonts.com/css/geoffrey-2" rel="stylesheet">
+</head>
+<body>
+
+    <div class="left">
+            <h1 class="headline">צור לך קלף</h1>
+            <button onclick="changeType('מפלצת')">מפלצת</button>
+            <button onclick="changeType('רובוט')">רובוט</button>
+            <button onclick="changeType('חתול')">חתול</button>
+            <hr>
+            <button onclick="randomName()">שם רנדומלי</button>
+            <input oninput="changeName()"
+             id="nameInput" type="text" placeholder="בחר שם לדמות">
+        <hr>
+        <div class="flex1">
+            <div>
+                <label>התקפה</label>
+                <br>
+                <input oninput="setAtt() "
+                 id="attInput" type="range" value="8" min="1" max="10">
+            </div>
+            <div>
+                <label>חיים</label>
+                <br>
+                <input oninput="setLife()"
+                 id="lifeInput" type="number" value="3" min="1" max="5">
+            </div>
+            <div>
+                <label>הגנה</label>
+                <br>
+                <input oninput="setDef()"
+                 id="defInput" type="range" value="5" min="1" max="10">
+            </div>
+      
+        </div>
+        <hr>
+        <button onclick="setHeart('❤️')" class="icon-btn">❤️</button>
+        <button onclick="setHeart('🖤')" class="icon-btn">🖤</button>
+        <button onclick="setHeart('🤍')" class="icon-btn">🤍</button>
+        <button onclick="setHeart('🩷')" class="icon-btn">🩷</button>
+        <button onclick="setHeart('🩶')" class="icon-btn">🩶</button>
+        <button onclick="setHeart('❤️‍🩹')" class="icon-btn">❤️‍🩹</button>
+        <button onclick="setHeart('❤️‍🔥')" class="icon-btn">❤️‍🔥</button>
+        <button onclick="setHeart('😺')" class="icon-btn">😺</button>
+        <button onclick="setHeart('👹')" class="icon-btn">👹</button>
+        <button onclick="setHeart('☠️')" class="icon-btn">☠️</button>
+        <button onclick="setHeart('💀')" class="icon-btn">💀</button>
+        <button onclick="setHeart('🤖')" class="icon-btn">🤖</button>
+        <hr>
+        <button onclick="setFont(`'Stopmotion', sans-serif`)">פונט5</button>
+        <button onclick="setFont(`'Fredoka', sans-serif`)">פונט4</button>
+        <button onclick="setFont(`'Amatic SC', sans-serif`)">פונט3</button>
+        <button onclick="setFont(`'Geoffrey', sans-serif`)">פונט2</button>
+        <button onclick="setFont(`'Rosemary', sans-serif`)">פונט1</button>
+        <hr>
+
+        
+        <label>צבע</label>
+        <input id="colorInput1" type="color" oninput="setColor()">
+
+        <input id="colorInput2" type="color" value="#FFD700" oninput="setBorder()">
+        <label>מסגרת</label>
+
+        <hr>
+        <button onclick="setCard('card1')">1סגנון</button>
+        <button onclick="setCard('card2')">סגנון2</button>
+        <button onclick="setCard('card3')">סגנון3</button>
+        <button onclick="setCard('card4')">סגנון4</button>
+        <button onclick="setCard('card5')">סגנון5</button>
+        <button onclick="setCard('card6')">סגנון6</button>
+        <button onclick="setCard('card7')">סגנון7</button>
+    </div>
+        
+    <hr>
+
+    <div class="right">
+        <figure id="card" class="card7">
+            <h1 id="nameH1">אריק המדריך</h1>
+            <p id="typeP">מפלצת</p>
+            <div class="flex">
+                <h2>⚔️ <span id="powerSpan">8</span></h2>
+                <h2> <span id="defSpan">5</span>🛡️</h2>
+            </div>
+            <h3 id="lifeH3">❤️❤️❤️</h3>
+            <img id="cardImg" >
+        </figure>
+        <br>
+    </div>
+    
+    <script type="text/javascript" src="main.js"></script>
+
+
+</body>
+</html>

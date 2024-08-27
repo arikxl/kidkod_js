@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <h1>Guess The Number</h1>
+    <div class="game">
+        <h3>I am thinking of a number between 1 - <span id="maxNumberSpan">10</span>
+        <br>
+            Can you guess it?
+        </h3>
+        <div class="guessDiv">
+            <input type="number" placeholder="00" min="1" max='10' id="guessInput" required>
+            <button onclick="guess()" class="go-btn">Go!</button>
+        </div>
+        <p>No. of guesses: <span id="noOfGuessesSpan">0</span></p>
+        <p>Guessed Numbers: <span id="guessedNumbersSpan"></span></p>
+        <div id="result">
+            <div id="hint"></div>
+        </div>
+        <button onclick="newGame()">Play Again</button>
+    </div>
+
+    <a href="../index.html">
+        <button >Back to Home</button>
+    </a>
+        <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

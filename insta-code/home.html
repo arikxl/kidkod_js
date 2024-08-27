@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>insta-code📸</title>
+		<link rel="stylesheet" href="style.css">
+		
+	
+	</head>
+	<body>
+		<h1>My Insta-Code</h1>
+	
+		<div class="game">
+			<div class="left">
+				<div class="flex">
+					<label>Blur</label>
+					<input type="range" oninput="addFilter()" id="blurInpt" min="0" max="10" value="0" step="0.1">
+				</div>
+				<div class="flex">
+					<label>Brightness</label>
+					<input type="range" oninput="addFilter()" id="brightnessInpt" min="0" max="200" value="100" step="1" >
+				</div>	
+				<div class="flex">
+					<label>Contrast</label>
+					<input type="range" oninput="addFilter()" id="contrastInpt" min="0" max="200" value="100" step="1" >
+				</div>
+				<div class="flex">
+					<label>Grayscale</label>
+					<input type="range" oninput="addFilter()" id="grayscaleInpt" min="0" max="100" value="0" step="1" >
+				</div>
+				<div class="flex">
+					<label>Hue Rotate</label>
+					<input type="range" oninput="addFilter()" id="hueRotateInpt" min="0" max="360" value="0" step="1" >
+				</div>
+				<div class="flex">
+					<label>Invert</label>
+					<input type="range" oninput="addFilter()" id="invertInpt" min="0" max="100" value="0" step="1" >
+				</div>
+				<div class="flex">
+					<label>Saturate</label>
+					<input type="range" oninput="addFilter()" id="saturateInpt" min="0" max="200" value="100" step="1" >
+				</div>
+				<div class="flex">
+					<label>Sepia</label>
+					<input type="range" oninput="addFilter()" id="sepiaInpt" min="0" max="100" value="0" step="1" >
+				</div>
+				
+				<div class="flip-btns">
+					<input type="radio" id="noFlip" name="flip" checked onclick="flipImg()">
+					<label>No Flip</label>
+					
+					<input type="radio" id="flipX" name="flip" onclick="flipImg()">
+					<label>Flip Horizontal</label>
+					
+					<input type="radio" id="flipY" name="flip" onclick="flipImg()">
+					<label>Flip Vertical</label>
+					
+				</div>
+			</div>
+			
+			<div class="right">
+				<img id="myImg" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" >
+				
+				<div class="btnsRight">
+					<div onchange="showPic()">
+						<input type="file" id="uploadPic" accept="Image/*" hidden >
+						<label for="uploadPic">Choose Pic</label>
+					</div>
+					<button onclick="resetPic()">Reset Pic</button>
+					<button onclick="downloadPic()">Download</button>
+				</div>
+			
+			
+			</div>
+		</div>
+		
+		
+		
+		<script type="text/javascript"  src="main.js"></script>
+	</body>
+<html>

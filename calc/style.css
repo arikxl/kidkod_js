@@ -1,0 +1,40 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.calc{
+    width:400px;
+    /* height: 400px; */
+    background-color: black;
+    border-radius: 15px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+}
+
+input{
+    font-size:30px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+select, button{
+    font-size:30px;
+    padding:5px 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    border-color:deepskyblue;
+    color: deepskyblue;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
