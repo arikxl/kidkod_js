@@ -7,7 +7,7 @@ function calcAge() {
     console.log('today:', today)
     const birthday = new Date(document.getElementById('dateInput').value);
     console.log('birthday:', birthday)
-    if (birthday > today || birthday===null) {
+    if (birthday > today || birthday=='Invalid Date') {
         alert('you cant do that!')
         
     } else {

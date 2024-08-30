@@ -2,20 +2,14 @@ body{
     color: snow;
     background: rgb(49, 249, 96);
     background: radial-gradient(circle, rgba(49,249,96,1) 0%, rgba(35,31,69,1) 100%);
-    cursor: url('444.svg'),auto;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
 
-html{
-    
-}
-
-button:hover{
-    background-color:red;
-}
 
 .game{
     width: 400px;
-    /* background-color: black; */
     margin: 50px auto;
     border-radius: 20px;
     padding: 20px;
@@ -24,8 +18,9 @@ button:hover{
 
 h1{
     text-align: center;
-    
 }
+
+
 .wrapper{
     border-radius: 20px;
     background-color:black;
@@ -57,14 +52,4 @@ h1{
     font-size: 20px;
     font-weight: bold;
     display: none;
-}
-
-a button{
-    margin: 0 auto;
-    display:flex;
-}
-
-a{
-    text-decoration: none;
-
 }
