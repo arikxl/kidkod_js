@@ -3,7 +3,6 @@ const footer = document.getElementById('footer');
 
 let isGameOn = true;
 
-
 coin.addEventListener('mouseover', moveCoin)
 
 function moveCoin() { 
@@ -25,11 +24,3 @@ function hit() {
 }
 
 
-function openFullscreen() {
-  const elem = document.documentElement; 
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) 
-    elem.webkitRequestFullscreen();
-}
-// openFullscreen()

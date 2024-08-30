@@ -4,6 +4,7 @@ function calc() {
     const operator = document.getElementById('operatorSelect').value;
     
     let answer;
+    
     switch (operator) {
         case "+":
             answer = num1 + num2;

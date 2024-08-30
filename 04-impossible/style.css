@@ -5,17 +5,16 @@
 }
 
 body{
-        background-image: url('https://cdn1.epicgames.com/ue/product/Screenshot/g10-1920x1080-d26c5122d8803d571cd4c752aae3a07f.jpg');
-        background-size: cover;
-    }
+    background-image: url('https://cdn1.epicgames.com/ue/product/Screenshot/g10-1920x1080-d26c5122d8803d571cd4c752aae3a07f.jpg');
+    background-size: cover;
+}
     
-    #logo{
-        font-family:  sans-serif;
-        color: gold;
-        font-size:50px;	
-        text-shadow: 0 0 10px white;
-        font-family: 'Glotona Black', sans-serif;
-                                  
+#logo{
+    font-family:  sans-serif;
+    color: gold;
+    font-size:50px;	
+    text-shadow: 0 0 10px white;
+    font-family: 'Glotona Black', sans-serif;                              
 }
 
 header{
